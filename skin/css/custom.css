@@ -1,0 +1,277 @@
+/* Custom css */
+body {
+    padding-top: 70px;
+}
+div.logo-header-front {
+	margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+nav div.container {
+	margin: 0 auto;
+	height: auto;
+	min-height: 100%;
+	max-height: 30px !important;
+    min-height: 30px !important;
+}
+@-moz-document url-prefix() { 
+	div.container {
+		position: relative;
+		min-height: 1600px;
+		height: 100%;
+		margin: 0 auto -30px
+	}
+	div.data-wrapper {
+		min-height: 300px
+	}
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+.list-group-item-wrapper {
+    min-height: 60px;
+}
+.list-group-item-content {
+    display: none;
+}
+.other-lang {
+    word-break: break-all;
+}
+.front-data-wrapper:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.family-wrapper {
+    padding: 0 10px;
+    float: left;
+	width: 33% !important;
+}
+.family-title {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.family-title label {
+    cursor: pointer;
+	font-weight: 300;
+    font-size: 18px;
+}
+.family-title i.family-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 7px;
+    margin: 0 auto;
+}
+.family-wrapper.active .family-title i.family-icon:before {
+    content: " ";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-style: solid;
+    border-radius: 100%;
+    border-width: 5px;
+    margin: 3px auto 0;
+}
+.group-title {
+    cursor: pointer;
+    padding: 10px 10px;
+    margin: 10px 0 0;
+	text-transform: uppercase;
+}
+.group-title label {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.family-wrapper.deactive .group-title label {
+    display: none;
+}
+.group-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.family-wrapper.deactive .group-icon {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.group-wrapper .procedure-list {
+    display: none;
+    border-left-width: 2px;
+    border-left-style: solid;
+    margin-left: 10px;
+    padding: 10px 0 0;
+}
+.group-wrapper .procedure-list:after {
+    content: " ";
+    display: block;
+    width: 40px;
+    margin-top: 20px;
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+.group-wrapper .procedure-list li {
+    position: relative;
+    list-style: none;
+    padding: 5px 0 5px 20px;
+    margin: 0;
+}
+.group-wrapper .procedure-list li:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 3px;
+}
+.group-wrapper .procedure-list li:hover:after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: -4px;
+    width: 5px;
+    height: 5px;
+    border-style: solid;
+    border-radius: 100%;
+    border-width: 3px;
+    float: left;
+}
+.group-wrapper .procedure-list li a,
+.group-wrapper .procedure-list li a:visited {
+    text-decoration: none;
+    color: #333;
+    font-family: "Gotham", sans-serif;
+}
+
+/* Frontend trámite */
+div.container {
+	min-height: 100%;
+}
+@-moz-document url-prefix() { 
+	div.container {
+		min-height: 1650px;
+	}
+}
+div.tramite-container {
+	min-height: 1650px
+}
+div.tramite {
+	border: 1px solid #000;
+}
+div.tramite div.col-md-12 {
+	border-bottom: 1px solid #000;
+}
+div.tramite h2 {
+	text-transform: uppercase;
+	font-size: 28px;
+}
+div.tramite div.col-md-12 h3 {
+	display: table-cell;
+    width: 200px;
+    font-size: 14px;
+    border-right: 1px solid #000;
+	padding: 10px 10px 10px 0;
+    vertical-align: middle;
+}
+div.tramite div.col-md-12 div {
+	display: table-cell;
+    padding: 10px 0 10px 10px;
+    vertical-align: middle;
+}
+div.tramite div.col-md-12 p {
+    font-size: 14px;
+}
+div.tramite div.col-md-12:first-child {
+	background: #99b97c;
+	color: #fff
+}
+div.tramite .areaTramite {
+	text-transform: uppercase
+}
+div.impContainer {
+	width: 100%;
+	text-align: center;
+	padding: 30px 0 50px
+}
+#impButton {
+	margin: 0 auto;
+    background: #1b2741;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 30px 10px 60px;
+    font-size: 16px;
+    background: url(images/bk_imprimir.png) #1b2741 no-repeat;
+    background-size: 30px;
+    background-position: 15px 50%;
+}
+#impButton:hover {
+	background-color: #337ab7
+}
+div.footerProcedure .col1 {
+	width: 15%;
+	display: inline-block;
+	text-align: left;
+}
+div.footerProcedure {
+	padding-bottom: 20px;
+	color: #1b2741;
+	display: none;
+}
+div.footerProcedure a {
+	color: #1b2741
+}
+div.footerProcedure .col2 {
+	width: 70%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: bottom;
+	color: #1b2741
+}
+div.footerProcedure .col3 {
+	width: 15%;
+	display: inline-block
+}
+@media print {
+	#impButton {
+		display: none
+	}
+	div.logo-header-front {
+		display: none
+	}
+	div.footerProcedure {
+		display: block
+	}
+}
+
+footer {
+    background: #1b2741;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+	font-size: 12px;
+    font-weight: 200;
+	padding: 5px;
+	height: 32px;
+	clear: both;
+}
+footer a {
+	color: #fff !important
+}
+footer a:hover {
+	color: #fff !important;
+	text-decoration: underline
+}
